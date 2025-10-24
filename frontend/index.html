@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Campus Event Registration Platform</h1>
+        
+        <div class="card">
+            <h2>Daftar Event</h2>
+            <form id="register-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="event-select">Pilih Event:</label>
+                <select id="event-select" name="event_id" required>
+                    <option value="">-- Memuat event... --</option>
+                </select>
+                
+                <button type="submit">Daftar</button>
+            </form>
+            <p id="register-message"></p>
+        </div>
+
+        <div class="card">
+            <h2>Daftar Event Tersedia</h2>
+            <div id="event-list">
+                <p>Memuat data event dari API...</p>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
